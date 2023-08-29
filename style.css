@@ -1,9 +1,86 @@
 @font-face {
-  font-family: 'poppins';
-  src: url(Poppins/Poppins-Bold.ttf);
-  font-syle: normal;
+  font-family: Poppin;
+  src: url("Poppins/Poppins-Bold.ttf");
 }
 
-p {
-  font-family: poppins;
+
+@font-face {
+  font-family: PoppinsSemi;
+  src: url("Poppins/Poppins-SemiBold.ttf");
+}
+
+h1 {
+  font-family: PoppinsSemi;
+  color: white;
+}
+
+@media print {
+  header {
+    position: fixed;
+    top: 0;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+  }
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
+.header {
+  padding: 10px;
+  text-align: center;
+  background: transparent;
+  color: white;
+  font-size: 8px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: transparent;
+  /*padding: 5px 0;
+    position: relative; /* or 'fixed' if you want it to stay at the top when scrolling */
+  width: 100%;
+  z-index: 10;
+  /* optional, in case other elements overlap the navbar */
+}
+
+.navbar a {
+  text-decoration: none;
+  /* removes the underline */
+  color: white;
+  /* or any other color you'd like for the link text */
+  /*padding: 8px 16px;
+    transition: color 0.3s;*/
+}
+
+.navbar a:hover {
+  color: #555;
+  /* slightly change color when hovered for better UX */
+}
+
+.img-with-text {
+  text-align: justify;
+  width: 20;
+}
+
+.img-with-text img {
+  display: block;
+  margin: 0 auto;
+}
+
+.titletxt {
+  font-family: Poppins-Bold;
+  margin: 100px;
 }
